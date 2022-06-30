@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import url(reset.css);
+
+#wrap{width: 100%; height: 100%; background: #f2f2f2; overflow: scroll;}
+/* top */
+.top{width: 100%; height: 70px; background: #000;}
+.top .inner-top{width: 100%; height: auto; padding: 0px 5%; box-sizing: border-box;}
+.top .inner-top .tLeft{width: 200px; height:70px; float: left;}
+.top .inner-top .tLeft p.title{width: 100%; color: #fff; font-size: 25px; line-height: 70px; font-family: 'Permanent Marker', cursive !important;}
+.top .inner-top .tLeft p.title > span:nth-child(1){color: #21e0f3; padding-right: 10px; font-family: 'Permanent Marker', cursive !important;}
+.top .inner-top .tRight{width: 25px; height:18px; float: right; margin: 26px 0px; cursor: pointer;}
+.top .inner-top .tRight img{width: 25px; height: 18px; float: right;}
+
+/* left */
+.left{width: 100%; height: 100%; background: #000; position: fixed; left: 0; top: 0; display: block;}
+.left .inner-left{width: 100%; height: auto;}
+.left .inner-left .close{width: 18px; height: 18px; position: absolute; right: 5%; top: 20px; }
+.left .inner-left .close img {width: 18px; height: 18px;}
+.left .inner-left .profile{width: 90%; height: 50px; border-top: 1px solid #323232; border-bottom: 1px solid #323232; margin:80px 5% 0 5%; padding: 10px 0;}
+.left .inner-left .profile::after{display: block; content: ""; clear: both;}
+.left .inner-left .profile .picture{width: 50px; height: 50px; border: 1px solid #fff; float: left; box-sizing: border-box; border-radius: 100%; background: url(../image/profile01.jpg) no-repeat 35% 60%; background-size: 150%;}
+.left .inner-left .profile .name{height: 50px; color: #ccc; float: left; margin-left: 10px; line-height: 50px;}
+.left .inner-left .profile .name p{font-size: 15px; font-weight: 300;}
+.left .inner-left .list{width: 90%; height: 150px; color: #ccc; margin: 0 5%; padding: 30px 0; border-bottom: 1px solid #323232; font-weight: 300;}
+.left .inner-left .list > ul > li {width: 100%; height: 50px; line-height: 50px;}
+.left .inner-left .list > ul > li > span{padding-right: 3px;}
+.left .inner-left .menu{height: 130px; border-bottom: 0px; font-weight: 500; font-size: 20px;}
+.on{color:#fff; cursor: pointer;}
+.left .inner-left .menu > ul > li {cursor: pointer;}
+
+/* contents */
+.contents{width: 100%; height: 100%; display: none;}
+/* .tongyeong{display: none;} */
+.contents .inner-contents{width: 100%; height: 100%; padding: 10px 5%; box-sizing: border-box}
+.contents .inner-contents h1 {margin-bottom: 20px;}
+.contents .inner-contents .section{width: 100%; height: auto;}
+.contents .inner-contents .section div.sub {width: 100%; height: 40px; background: #fff; border-radius: 10px; border: 1px solid #ccc; padding:0 10px; background: #fff; box-sizing: border-box; color: #323232; transition: 0.5s; margin-bottom: 10px;}
+.contents .inner-contents .section div.sub p.subTitle {width:100%; height: 40px; line-height: 40px; }
+.contents .inner-contents .section div.sub:hover{box-shadow: 5px 5px 5px #ccc; cursor: pointer;}
+.contents .inner-contents .section div.sub p.subTitle::after{display: block; content: ""; clear: both;}
+.contents .inner-contents .section div.sub p.subTitle > span {display:block;}
+.contents .inner-contents .section div.sub p.subTitle > span:nth-child(1) {float: left;}
+.contents .inner-contents .section div.sub p.subTitle > span:nth-child(2) {float: right; font-size: 12px; color: #323232;}
+.contents .inner-contents .section div.subContents{font-size: 14px; display: none; padding-bottom: 10px;}
+.contents .inner-contents .section div.subContents p.hotelInfo {text-indent: 10px;}
+
+.contents .inner-contents .section div.subContents div {margin-bottom: 10px;}
+.contents .inner-contents .transfer div.subContents div > ul > li {width: 80px; height: 40px; display: block; float: left; border: 1px solid #ccc; border-radius: 10px; text-align: center; line-height: 40px; margin: 10px 5px; background: #f2f2f2;}
+.contents .inner-contents .section div.subContents div > ul > li > a{display: block;}
+.contents .inner-contents .transfer div.subContents div > ul > li:hover{background: #fff;}
+.contents .inner-contents .transfer div.subContents div::after{display: block; content: ""; clear: both;}
+
+.contents .inner-contents .hotel div.subContents div::after{display: block; content: ""; clear: both;}
+.contents .inner-contents .hotel div.subContents div {margin:10px 0px;}
+.contents .inner-contents .hotel div.subContents div > ul > li {width: 300px; height: auto; float: left; margin: 5px 10px;}
+.contents .inner-contents .hotel div.subContents div > ul > li > a img {width: 300px; height: 200px;}
+.contents .inner-contents .hotel div.subContents div > ul > li > a img:hover{box-shadow: 10px 10px 10px #f2f2f2;}
+.contents .inner-contents .hotel div.subContents div > ul > li > a img:nth-child(2){margin-right: 20px;}
+
+.contents .inner-contents .activity div.subContents div::after{display: block; content: ""; clear: both;}
+.contents .inner-contents .activity div.subContents div {margin:10px 0px;}
+.contents .inner-contents .activity div.subContents div > ul > li {width: 220px; height: 220px; float: left; margin: 5px 10px; position: relative; background-size: 220px !important; transition: .5s all; border-radius: 5px;}
+
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(1) {background: url(../image/t_activity_01.jpg) no-repeat;}
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(2) {background: url(../image/t_activity_02.jpg) no-repeat;}
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(3) {background: url(../image/t_activity_03.jpg) no-repeat;}
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(4) {background: url(../image/t_activity_04.jpg) no-repeat;}
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(5) {background: url(../image/t_activity_05.jpg) no-repeat;}
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(6) {background: url(../image/t_activity_06.jpg) no-repeat;}
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(7) {background: url(../image/t_activity_07.jpg) no-repeat;}
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(8) {background: url(../image/t_activity_08.jpg) no-repeat;}
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(9) {background: url(../image/t_activity_09.jpg) no-repeat;}
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(10) {background: url(../image/t_activity_10.jpg) no-repeat;}
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(11) {background: url(../image/t_activity_11.jpg) no-repeat;}
+.tongyeong .inner-contents .activity div.subContents div > ul > li:nth-child(12) {background: url(../image/t_activity_12.jpg) no-repeat;}
+
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(1) {background: url(../image/p_activity_01.jpg) no-repeat;}
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(2) {background: url(../image/p_activity_02.jpg) no-repeat;}
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(3) {background: url(../image/p_activity_03.jpg) no-repeat;}
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(4) {background: url(../image/p_activity_04.jpg) no-repeat;}
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(5) {background: url(../image/p_activity_05.jpg) no-repeat;}
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(6) {background: url(../image/p_activity_06.jpg) no-repeat;}
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(7) {background: url(../image/p_activity_07.jpg) no-repeat;}
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(8) {background: url(../image/p_activity_08.jpg) no-repeat;}
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(9) {background: url(../image/p_activity_09.jpg) no-repeat;}
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(10) {background: url(../image/p_activity_10.jpg) no-repeat;}
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(11) {background: url(../image/p_activity_11.jpg) no-repeat;}
+.pohang .inner-contents .activity div.subContents div > ul > li:nth-child(12) {background: url(../image/p_activity_12.jpg) no-repeat;}
+
+.contents .inner-contents .activity div.subContents div > ul > li > a{display: block; width: 100%; height: 100%; background: #000; position: absolute; left: 0; top: 0; opacity: .5; text-align: center; font-size: 20px; color: #fff; line-height: 220px; font-weight: bold;  border-radius: 5px;}
+
+
+/*모바일 사이즈!!!!!!!!!!!!!!!!!!*/
+@media only screen and (max-width:767px){
+    .contents .inner-contents .activity div.subContents div > ul > li { width:145px; height: 145px; background-size: 145px !important; margin: 5px 5px;}
+    .contents .inner-contents .activity div.subContents div > ul > li > a {line-height: 145px;}
+
+}

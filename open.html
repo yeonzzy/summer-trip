@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/open.css">
+    <title>SUMMER TRIP</title>
+</head>
+<body>
+    <div id="wrap">
+        <div class="contents">
+            <div class="inner-contents">
+                <div class="mainTitle">
+                    <p class="title"><span>summer</span> trip</p>
+                    <p>X</p>
+                    <p>yeonji daecheol</p>
+                    <p><a href="main.html">menu go &#128400;</a></p>
+                    <span class="leftTop"></span>
+                    <span class="rightTop"></span>
+                    <span class="rightBottom"></span>
+                    <span class="leftBottom"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            setTimeout(function(){
+                $(".mainTitle").children("p").eq(0).fadeIn(1000, function(){
+                    $(".mainTitle").children("p").eq(1).fadeIn(1000, function(){
+                        $(".mainTitle").children("p").eq(2).fadeIn(1000,function(){
+                            $(".mainTitle").css({"paddingTop":"90px"});
+                            $(".mainTitle").children("p").eq(3).fadeIn(1000)
+                            $(".mainTitle").children("p").eq(3).fadeIn(1000)
+                        })
+                    });
+                });
+                $(".leftTop").animate({width:"350"},1800)
+                $(".rightTop").animate({height:"400px"},1800)
+                $(".leftBottom").animate({height:"400px"},1800)
+                $(".rightBottom").animate({width:"350px"},1800)
+
+                // $(".leftTop").animate({width:"350px"},1000, function(){
+                //     $(".rightTop").animate({height:"400px"},1000, function(){
+                //         $(".rightBottom").animate({width:"350px"},1000, function(){
+                //             $(".leftBottom").animate({height:"400px"},1000, function() {
+                //                 $(".mainTitle").css({"paddingTop":"90px"});
+                //                 $(".mainTitle").children("p").eq(3).fadeIn(1000)
+                //                 $(".mainTitle").children("p").eq(3).fadeIn(1000)
+                //             })
+                //         });
+                //     });
+                // });
+            },1500);
+        });
+
+        // function position(){
+        //     console.log($(window).width());
+        // }
+    </script>
+</body>
+</html>
