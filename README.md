@@ -1,5 +1,5 @@
 ### README
-[summer-trip :-)](https://yeonzzy.github.io/summer-trip)
+[summer-trip :-)](https://yeonzzy.github.io/summer-trip/open.html)
 
 _developed by_ **yeonji**
 
